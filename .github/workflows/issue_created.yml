@@ -1,5 +1,5 @@
 name: "Issue Created"
-on: [issues]
+on: [issues.opened]
 
 jobs:
   issue_created:
