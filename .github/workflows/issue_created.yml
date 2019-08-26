@@ -1,7 +1,7 @@
 name: "Issue Created"
 on:
   issues:
-    types: [opened]
+    types: [opened, closed]
 
 jobs:
   issue_created:
