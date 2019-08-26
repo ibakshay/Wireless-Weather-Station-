@@ -1,0 +1,13 @@
+name: "Issue Created"
+on: [issues]
+
+jobs:
+  issue_created:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+      
+    - name: "TEST ACTION"
+      uses: ibakshay/action-template@dev
+      with: 
+        mytoken: ${{ secrets.GITHUB_TOKEN }}
