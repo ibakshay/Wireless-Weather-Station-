@@ -10,6 +10,6 @@ jobs:
       
     - name: "TEST ACTION"
       if: github.event.action == 'closed' || github.event.action == 'opened'
-      uses: ibakshay/action-template@dev-release
+      uses: ibakshay/action-template@dev
       with: 
         mytoken: ${{ secrets.GITHUB_TOKEN }}
