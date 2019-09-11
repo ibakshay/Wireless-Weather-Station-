@@ -1,15 +1,15 @@
-name: "Issue Created"
+name: "CLA"
 on:
   pull_request:
 
 jobs:
-  issue_created:
+  CLA:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
       
     - name: "TEST ACTION"
-     # if: github.event.action == 'closed' || github.event.action == 'opened'
+      if: github.event.action == 'opened' || github.event.action == 'synchronize'
       uses: ibakshay/action-template@dev-release
       with: 
         mytoken: ${{ secrets.GITHUB_TOKEN }}
