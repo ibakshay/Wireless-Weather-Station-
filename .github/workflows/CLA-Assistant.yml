@@ -1,4 +1,4 @@
-name: "Issue Created"
+name: "CLA"
 on:
   pull_request:
 
