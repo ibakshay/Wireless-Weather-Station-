@@ -1,6 +1,6 @@
 name: "CLA"
 on:
-  issues
+  issues:
     types: [opened, closed]
   
 
