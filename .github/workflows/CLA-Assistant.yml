@@ -1,7 +1,7 @@
 name: "CLA"
 on:
   issues:
-   # types: [opened, closed]
+    types: [opened, closed]
   
 
 jobs:
