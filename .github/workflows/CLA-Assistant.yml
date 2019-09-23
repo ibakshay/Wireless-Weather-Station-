@@ -14,13 +14,12 @@ jobs:
     #  if: github.event.action == 'opened' || github.event.action == 'edited'
       uses: ibakshay/action-template@dev
       with: 
-        mytoken: ${{ secrets.GITHUB_TOKEN }}
-        
+        mytoken: ${{ secrets.GITHUB_TOKEN }}   
      - name: Print a greeting
-      env:
+        env:
         MY_VAR: Hi there! My name is
         FIRST_NAME: Mona
         MIDDLE_NAME: The
         LAST_NAME: Octocat
-      run: |
+        run: |
         echo $MY_VAR $FIRST_NAME $MIDDLE_NAME $LAST_NAME.
