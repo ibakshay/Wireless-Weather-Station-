@@ -24,4 +24,4 @@ jobs:
         echo $MY_VAR $FIRST_NAME $MIDDLE_NAME $LAST_NAME.
     - name: GitHub Event Name
       run: |
-        echo The ${{ github.repository }} event triggered this step.
+        echo The ${{ github.actor }} event triggered this step.
