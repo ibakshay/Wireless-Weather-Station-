@@ -1,0 +1,28 @@
+name: "CLA"
+on:
+  pull_request:
+  
+
+jobs:
+  CLA:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+      
+    - name: "TEST ACTION"
+      uses: ibakshay/action-template@dev
+      env:
+        testtoken: ${{ secrets.testtoken}}   
+      with: 
+        mytoken: ${{ secrets.GITHUB_TOKEN }}   
+    - name: Print a greeting
+      env:
+        MY_VAR: Hi there! My name is
+        FIRST_NAME: akshay
+        MIDDLE_NAME: iyyadurai  
+        LAST_NAME: balasundaram
+      run: |
+        echo $MY_VAR $FIRST_NAME $MIDDLE_NAME $LAST_NAME.
+    - name: GitHub Event Name
+      run: |
+        echo The ${{ github.actor }} event triggered this step.
