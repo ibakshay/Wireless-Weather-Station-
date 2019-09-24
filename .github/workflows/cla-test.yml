@@ -13,6 +13,7 @@ jobs:
       uses: ibakshay/action-template@dev
       env:
         testtoken: ${{ secrets.testtoken}}   
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with: 
         mytoken: ${{ secrets.GITHUB_TOKEN }}   
     - name: Print a greeting
