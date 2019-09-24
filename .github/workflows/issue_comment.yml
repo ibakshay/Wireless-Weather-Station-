@@ -5,11 +5,11 @@ on:
   
 
 jobs:
-  Cissue_commentLA:
+  issue_comment:
     runs-on: ubuntu-latest
     steps:
-  - name: run-something
-    if: github.event.issue.comment.body == "testCLA" && github.event.issue.comment.author == "ibakshay"
-    run: echo run CLA
+    - name: run-something
+      if: github.event.issue.comment.body == "testCLA" && github.event.issue.comment.author == "ibakshay"
+        run: echo run CLA flow
     
       
